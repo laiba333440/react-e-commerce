@@ -1,0 +1,51 @@
+.new-collections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.new-collections h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1; /* Adjust this value to reduce spacing */
+}
+
+.new-collections hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Set to three equal columns */
+  margin-top: 50px;
+  gap: 10px; /* Changed from negative value to positive */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Target the last two items in the last row */
+.collections .item:nth-last-child(-n+2) {
+  display: none; /* Hide the last two items */
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  max-width: 200px; /* Adjust image width as needed */
+  height: auto;
+}
+
+.item h2 {
+  font-size: 20px;
+  margin: 0; /* Removed margin to avoid extra spacing */
+}
